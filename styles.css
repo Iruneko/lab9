@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 30px;
+    color: #222;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+.beatles-table {
+    background-color: #f7f1e3;
+    font-family: Georgia, serif;
+}
+
+.beatles-table th {
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  color: white;
+}
+
+.beatles-table td {
+  background-color: #f3e8ff;
+  font-family: Georgia, serif;
+}
+
+.beatles-table tr:nth-child(even) td {
+  background-color: #e0d4ff;
+}
+
+.tv-table {
+  border: 2px solid #1f3c88;
+}
+
+.tv-table th {
+  background-color: #1f3c88;
+  color: white;
+  font-weight: bold;
+}
+
+.tv-table td {
+  background-color: #f4f7fb;
+}
+
+.tv-table td[colspan] {
+  background-color: #c7d6f0;
+  font-weight: bold;
+}
+.fruit-table td {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.fruit-table tr:first-child td {
+  background-color: #ffb347; /* orange */
+}
+
+.fruit-table tr:nth-child(2) td {
+  background-color: #77dd77; /* green */
+}
+
+.fruit-table tr:nth-child(3) td {
+  background-color: #ff6961; /* red */
+}
+
+.my-table {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+.my-table th {
+  background-color: #5c7a66;
+  color: white;
+}
+
+.my-table td {
+  background-color: #eef5ef;
+  text-align: left;
+  padding: 14px;
+}
+
+.my-table tr:nth-child(even) td {
+  background-color: #dfeee2;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 40px;
+  margin-bottom: 14px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.theme-image {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.beatles-table + .theme-image,
+.section-title .theme-image {
+  transition: transform 0.2s ease;
+}
+
+.section-title .theme-image:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.theme-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
